@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title><img src="./assets/images/favicon-32x32.png" alt="">
+     Frontend Mentor | Age calculator app</title>
+     <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="container">
+      <!-- day -->
+      <div class="input-wrapper">
+        <label for="day" class="label day">Day</label>
+        <input type="text" id="day" class="" placeholder="DD" />
+        <span class="error day-error"></span>
+      </div>
+
+      <!-- month -->
+      <div class="input-wrapper">
+        <label for="month" class="label month">Month</label>
+        <input type="text" id="month" placeholder="MM" />
+        <span class="error month-error"></span>
+      </div>
+
+      <!-- year -->
+      <div class="input-wrapper">
+        <label for="year" class="label year">year</label>
+        <input type="text" id="year" placeholder="YYYY" />
+        <span class="error year-error"></span>
+      </div>
+    </section>
+
+    <section class="arrow-container">
+      <button class="arrow-icon" id="calculate">
+        <img
+          src="./assets/images/icon-arrow.svg"
+          alt="arrow icon"
+          width="18"
+        />
+      </button>
+    </section>
+
+    <section class="result-container">
+      <div class="result-wrapper">
+        <span class="result">--</span><span>years</span>
+      </div>
+      <div class="result-wrapper">
+        <span class="result">--</span><span>months</span>
+      </div>
+      <div class="result-wrapper">
+        <span class="result">--</span><span>days</span>
+      </div>
+    </section>
+  </main>
+
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      >Frontend Mentor</a
+    >. Coded by <a href="https://www.github.com/moses-daby">Dabytech</a>.
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
